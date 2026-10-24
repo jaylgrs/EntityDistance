@@ -7,12 +7,12 @@
     "authors": [
         "Jay"
     ],
-    "license": "CC0-1.0",
+    "license": "MIT",
     "icon": "assets/entitydistance/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "main.entitydistance.EntityDistance"
+            "entitydistance.EntityDistance"
         ]
     },
     "mixins": [

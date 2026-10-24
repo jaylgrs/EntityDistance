@@ -1,6 +1,6 @@
 {
     "required": true,
-    "package": "main.entitydistance.mixin",
+    "package": "mixin",
     "compatibilityLevel": "JAVA_21",
     "client": [
         "RenderMixin"

@@ -13,7 +13,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(EntityRenderManager.class)
 public class RenderMixin {
 
-    @Inject(method = "shouldRender", at = @At("HEAD"), cancellable = true)
+    @Inject(
+            method = "shouldRender(Lnet/minecraft/entity/Entity;Lnet/minecraft/client/render/Frustum;DDD)Z",
+            at = @At("HEAD"),
+            cancellable = true
+    )
     private <E extends Entity> void onShouldRender(
             E entity,
             Frustum frustum,
@@ -24,7 +28,7 @@ public class RenderMixin {
     ) {
         MinecraftClient client = MinecraftClient.getInstance();
 
-        if (client == null || client.options == null) {
+        if (client.world == null || client.options == null) {
             return;
         }
 
@@ -32,7 +36,11 @@ public class RenderMixin {
 
         double squaredDistance = entity.squaredDistanceTo(x, y, z);
 
-        if (Controller.shouldCull(entity, squaredDistance, renderDistance)) {
+        if (Controller.shouldCull(
+                entity,
+                squaredDistance,
+                renderDistance
+        )) {
             cir.setReturnValue(false);
         }
     }
