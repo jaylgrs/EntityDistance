@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "package": "main.entitydistance.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "RenderMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
