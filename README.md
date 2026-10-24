@@ -1,9 +1,19 @@
 # EntityDistance
 
-## Setup
+A Minecraft Fabric mod project focused on entity distance.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## About
+
+EntityDistance is a Fabric mod project designed to explore entity distance mechanics in Minecraft.
+
+More details about its features and functionality will be added as development progresses.
+
+## Development
+
+This project uses the Fabric modding toolchain.
+
+For development setup instructions, refer to the official [Fabric Documentation](https://docs.fabricmc.net/develop/getting-started/creating-a-project).
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+See the `LICENSE` file for license information.
