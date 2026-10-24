@@ -28,13 +28,12 @@ public class RenderMixin {
     ) {
         MinecraftClient client = MinecraftClient.getInstance();
 
-        if (client.world == null || client.options == null) {
+        if (client.player == null || client.world == null) {
             return;
         }
 
         int renderDistance = client.options.getViewDistance().getValue();
-
-        double squaredDistance = entity.squaredDistanceTo(x, y, z);
+        double squaredDistance = entity.squaredDistanceTo(client.player);
 
         if (Controller.shouldCull(
                 entity,
