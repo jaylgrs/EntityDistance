@@ -1,4 +1,4 @@
-package main.entitydistance;
+package entitydistance;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;

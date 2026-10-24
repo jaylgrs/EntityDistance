@@ -1,4 +1,4 @@
-package main.entitydistance.manager;
+package manager;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ExperienceOrbEntity;

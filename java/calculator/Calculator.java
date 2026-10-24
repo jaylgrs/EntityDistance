@@ -1,4 +1,4 @@
-package main.entitydistance.calculator;
+package calculator;
 
 public class Calculator {
 

@@ -1,6 +1,6 @@
-package main.entitydistance.mixin;
+package mixin;
 
-import main.entitydistance.controller.Controller;
+import controller.Controller;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.Frustum;
 import net.minecraft.client.render.entity.EntityRenderManager;

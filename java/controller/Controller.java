@@ -1,7 +1,7 @@
-package main.entitydistance.controller;
+package controller;
 
-import main.entitydistance.calculator.Calculator;
-import main.entitydistance.manager.ExclusionManager;
+import calculator.Calculator;
+import manager.ExclusionManager;
 import net.minecraft.entity.Entity;
 
 public class Controller {
